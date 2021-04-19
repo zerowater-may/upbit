@@ -4,9 +4,9 @@ import time
 import numpy as np
 import telegram
 import pyupbit
-from upbitpy import Upbitpy
+# from upbitpy import Upbitpy
 from pprint import pprint
-
+from upbitupbit import *
 class Indicators:
 
     def rsiindex(self,info):
@@ -280,6 +280,7 @@ if __name__ =='__main__':
     # print(ubt)
     import math
     upbit = Upbitpy(data['access_key'],data['secret_key'])
+    buy = upbit.buy_order(info['symbol'],5000)
     count = 1
     # il = True
     while True:
